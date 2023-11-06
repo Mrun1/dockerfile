@@ -11,7 +11,7 @@ RUN sed -ie '119c DocumentRoot "/var/www/html/webgames"' /etc/httpd/conf/httpd.c
 WORKDIR /var/www/html
 
 
-RUN git clone https://github.com/Mrun1/webgames.git
+RUN git clone https://github.com/Mrun1/Webgames.git
 
 
 CMD apachectl -DFOREGROUND
