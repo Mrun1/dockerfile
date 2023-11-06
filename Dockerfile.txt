@@ -1,7 +1,7 @@
 FROM centos:7
 
 
-MAINTAINER RD & CK
+MAINTAINER Mrunmayee Kulkarni
 
 
 RUN yum install httpd -y && yum install git -y
@@ -11,7 +11,7 @@ RUN sed -ie '119c DocumentRoot "/var/www/html/webgames"' /etc/httpd/conf/httpd.c
 WORKDIR /var/www/html
 
 
-RUN git clone https://github.com/Rushi017/webgames.git
+RUN git clone https://github.com/Mrun1/webgames.git
 
 
 CMD apachectl -DFOREGROUND
